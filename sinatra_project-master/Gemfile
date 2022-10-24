@@ -1,0 +1,15 @@
+source "https://rubygems.org/"
+ruby '3.0.0'
+# rubocop is used to verify the cleaness of the code
+gem 'rubocop', '~> 0.57.2'
+# rspec is used to write tests
+gem 'rspec'
+# pry is used for debuging
+gem 'pry'
+# JSON is used for databases
+gem 'json'
+gem 'sinatra'
+gem 'rack'
+gem 'shotgun', git: 'https://github.com/delonnewman/shotgun.git'
+gem "puma", "~> 6.0"
+gem 'csv'

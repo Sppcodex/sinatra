@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+    <h1>Binevenue sur Gossip-THP</h1>
+    <h2>Retrouve tous les Gossips!</h2>
+    <a href="/gossips/new/">Publier un nouveau Gossip</a>
+
+        <% gossips.each_with_index do |gossip, id| %> 
+          <p>Auteur :<%= gossip.author %></p>
+          <p>Gossip :<%= gossip.content %></p>
+          <p><a href = 'gossips/<%= id %>' >Gossip n° <%= id %></a></p><br>
+        <% end %>
+        
+
+  </body>
+</html>
